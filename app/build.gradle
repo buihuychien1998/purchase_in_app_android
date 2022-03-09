@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 31
     buildToolsVersion "29.0.3"
 
     defaultConfig {
-        applicationId "com.example.traveljaipur"
+        applicationId "com.examples.traveljaipurs"
         minSdkVersion 21
-        targetSdkVersion 29
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
 
@@ -15,10 +15,18 @@ android {
     }
 
     buildTypes {
+        debug {
+            buildConfigField "String", "licenceKey", "\"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAutnknujtVvBRTeN+73QNBOOT57Nb/sO9u8GRr+0KmrRaTReNuKgrWdt3P4IenKJkE1Vwy7jjv0pgbbnQPkN2Qu6Prqfz1h7fSejlOGVXLgHM/qTOrkicsf+wbfVLtX0Q/GICmCP+hmvw4Uq4gAb8ODK3v/XIgiuxY5EQFNnpOjrs0HHdRXYLJyXmCLxwBgMVZjobdlt+7Vf9BxHM3OewORZWRl46lsDpeXjrHphwMvW/kyKaNJCdm12HrG5yx7eMm5ZjyWmkuV0WYyiY1Dix7EGFUrIPGq/3kxlLa2mlTkGcDr+6zxl87q7JGdlAcOxnWzg4yWAgqvVtKhGYByB1YwIDAQAB\""
+        }
         release {
+            buildConfigField "String", "licenceKey", "\"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAutnknujtVvBRTeN+73QNBOOT57Nb/sO9u8GRr+0KmrRaTReNuKgrWdt3P4IenKJkE1Vwy7jjv0pgbbnQPkN2Qu6Prqfz1h7fSejlOGVXLgHM/qTOrkicsf+wbfVLtX0Q/GICmCP+hmvw4Uq4gAb8ODK3v/XIgiuxY5EQFNnpOjrs0HHdRXYLJyXmCLxwBgMVZjobdlt+7Vf9BxHM3OewORZWRl46lsDpeXjrHphwMvW/kyKaNJCdm12HrG5yx7eMm5ZjyWmkuV0WYyiY1Dix7EGFUrIPGq/3kxlLa2mlTkGcDr+6zxl87q7JGdlAcOxnWzg4yWAgqvVtKhGYByB1YwIDAQAB\""
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 }
 
@@ -27,8 +35,12 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     implementation 'com.google.android.material:material:1.1.0'
+    def billing_version = "4.1.0"
+    implementation "com.android.billingclient:billing:$billing_version"
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.google.code.gson:gson:2.6.2'
+    implementation 'com.anjlab.android.iab.v3:library:2.0.3'
 
 }

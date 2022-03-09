@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:theme="@style/AppTheme"
     android:background="@color/colorPrimary"
-    tools:context=".MainActivity" >
+    tools:context="com.store.traveljaipurs.MainActivity" >
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabs"
