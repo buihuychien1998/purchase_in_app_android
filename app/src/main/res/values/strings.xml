@@ -1,22 +1,103 @@
 <resources>
     <!-- UI strings -->
-    <string name="app_name" translatable="false">Travel Jaipur</string>
+    <string name="app_name" translatable="false">VietNam Tourist</string>
     <string name="category_name_City_Overview" translatable="false">City OverView</string>
     <string name="category_name_Restaurant" translatable="false">Cuisines</string>
     <string name="category_name_Rajwada_Hotel" translatable="false">Lodges</string>
     <string name="category_name_Historical" translatable="false">Historical Places</string>
     <string name="item_hightlight_txt" translatable="false">Highlight</string>
     <string name="intent_extra_item_title">PLACE_TITLE</string>
+    <string name="category_name_northern_vietnam">Northern Viet Nam</string>
+    <string name="category_name_central_vietnam">Central Viet Nam</string>
 
 
     <string name="World_Trade_Park_title">World Trade Park</string>
     <string name="World_Trade_Park_location">Malviya Nagar</string>
-    <string-array name="World_Trade_Park_highlights">
-        <item>100 rooms with 5 Star services, Banquet Hall, Swimming Pool</item>
-        <item>Movie Theatre Fantasy World (where you live in a fantasy world of illusion, we create it into reality)</item>
-        <item>UnderWater Restaurant (under construction)</item>
-        <item>Classy Auditorium (under construction)</item>
+    <string-array name="description_detail_tinh_hoa_binh">
+        <item>Hoa Binh province has the 29th largest area of 63 provinces and cities in Vietnam and is the 49th largest administrative unit of Vietnam in terms of population</item>
+        <item>In 2018, ranked 47th in terms of Gross Tables Product (GRDP), 30th in terms of GRDP per capita, 20th in terms of growth GRDP. With 846.1 population</item>
+        <item>GRDP reached 40,867 billion VND (equivalent to 1.7749 billion USD), average per capita GRDP 48.3 million VND (equivalent to 2,098 USD), GRDP growth rate reached 8 ,36%. </item>
+        <item>Hoa Binh is located in the south of Tonkin, limited to coordinates  North latitude,  East longitude, the provincial capital is Hoa Binh city, far from Hoa Binh city. Hanoi capital center 73 km. In planning construction, this is in the Hanoi area</item>
     </string-array>
+
+    <string-array name="description_detail_tinh_son_la">
+        <item>Son La was Vietnam 31st largest administrative unit in terms of population, 40th in Gross Regional Product (GRDP), 49th in GRDP per capita, 63rd in growth rate</item>
+        <item>GRDP chief. With 1,242,700 people, GRDP reached 47,223 billion VND (equivalent to 2.0509 billion USD), GRDP per capita reached 38 million VND (equivalent to 1,650 USD)</item>
+        <item>Son La province has an area of 14,125 km², ranking 3rd among 63 cities and provinces</item>
+        <item>Son La has a national border of 250 km long, bordering length with other provinces is 628 km</item>
+    </string-array>
+
+    <string-array name="description_detail_tinh_dien_bien">
+        <item>Dien Bien is a province in the Northwest region of Vietnam</item>
+        <item>It is bordered by Lai Châu to the northeast, Sơn La to the southeast, Puer City, Yunnan, China, to the northwest, and Phongsaly province in Laos to the west</item>
+        <item>The province covers an area of 9,541 square kilometres and as of 2019 it had a population of 598,856 people</item>
+        <item>Dien Bien province has a humid subtropical climate</item>
+    </string-array>
+
+    <string-array name="description_detail_tinh_lai_chau">
+        <item>Lai Chau is a city in the Northwest region of Vietnam.</item>
+        <item>It is the capital city of Lai Chau Province.</item>
+        <item>The city borders Phong Tho District, Sin Ho District và Tam Duong District.</item>
+        <item>Lai Chau has a humid subtropical climate (Köppen Cwa), typical for northwestern Vietnam, with hot, oppressively humid, and wet summers and warm to very warm, dry winters</item>
+    </string-array>
+
+    <string-array name="description_detail_tinh_lao_cai">
+        <item>Lao Cai is a city in the Northwest region of Vietnam</item>
+        <item>It is the capital of Lào Cai Province</item>
+        <item>The city borders Bảo Thắng District, Bát Xát District, Sa Pa and the city of Hekou Yao Autonomous County, in Yunnan province of southwest China</item>
+        <item>It lies at the junction of the Red River (Sông Hồng) and the Nanxi River (Yunnan) approximately 160 miles (260 km) northwest of Hanoi.
+        It is a market town for timber, and the Lào Cai Railway Station is located on the Hải Phòng railway to Yunnan Province in China.</item>
+    </string-array>
+
+    <string-array name="description_detail_tinh_yen_bai">
+        <item>Yen Bai is a city in Vietnam. It is the capital of Yên Bái Province, in the north-east region of Vietnam</item>
+        <item>The city borders Yên Bình District and Trấn Yên District</item>
+        <item>The city is a settlement along the banks of the Red River, approximately 183 km northwest of Hanoi</item>
+        <item>It is one of the important trading hubs between the highlands and the lowlands of Northern Vietnam</item>
+    </string-array>
+
+    <string-array name="description_detail_tinh_thanh_hoa">
+        <item>Thanh Hoa is the capital of Thanh Hoa Province.</item>
+        <item>The city is situated in the east of the province on the Ma River (Sông Mã), about 150 kilometers (93 miles) south of Hanoi and 1560 kilometers (969 miles) north of Ho Chi Minh City</item>
+        <item>Thanh Hoa became one of the most populous cities in North Central Coast after expanding in 2012,with a population of approximately 400,000</item>
+        <item> Thanh Hoa township was upgraded to Thanh Hoa City in 1994 and has been the historical center of politics, economy, culture, education and entertainment of Thanh Hoa Province</item>
+    </string-array>
+
+    <string-array name="description_detail_tinh_nghe_an">
+        <item>Nghe An is a province in the North Central Coast region of Vietnam</item>
+        <item>It is Vietnam largest province by area. Nghe An is located in a central position in North Central Coast. To the east lies the Gulf of Tonkin; to the west the province is bordered by Laos; to the south Hà Tĩnh province; and to the north is Thanh Hóa province</item>
+        <item>It is located on the east–west economic corridor connecting Myanmar, Thailand, Laos and Vietnam along National Route 7 to the port of Cửa Lò.</item>
+        <item>Nghe An has one city, three towns and 17 districts. Vinh is a grade one city, and is the economic and cultural center of the province, and of the whole North Central Coast.</item>
+    </string-array>
+
+    <string-array name="description_detail_tinh_ha_tinh">
+        <item>Ha Tinh is a city in Vietnam</item>
+        <item>It is the capital of Ha Tinh Province, and lies in the North Central Coast region</item>
+        <item>It is located on National Highway 1A</item>
+        <item>The Vietnamese capital Hanoi is located 340 km north of Hà Tĩnh, Vinh is located 50 km to the north, and Huế is located 314 km to the south. Ha Tinh is 12.5 km from the East Sea</item>
+    </string-array>
+
+    <string-array name="description_detail_tinh_quang_binh">
+        <item>Quang Binh formerly Tiên Bình under the reign of Lê Trung Hưng of the Lê dynasty (this province was renamed Quảng Bình in 1604), is a province along Vietnam north-central coast.</item>
+        <item>The province has an area of 8,066 square kilometers and population of 857,818 inhabitants (as of 2008)</item>
+        <item>The province is bordered by the Laotian Khammouane province to the west, the North Pacific Ocean to the east, Hà Tĩnh province to the north and Quảng Trị province to the south</item>
+        <item>Historically, this region belonged to Văn Lang and later the kingdom of Champa. Later it was claimed by both the Đại Việt and Champa and officially annexed into Đại Việt by Lý Thường Kiệt, a Lý dynasty general (under the reign of Lý Thánh Tông)</item>
+    </string-array>
+
+    <string-array name="description_detail_tinh_quang_tri">
+        <item>Quang Tri is a district-level town in Quang Tri Province in the North Central Coast region of Vietnam.</item>
+        <item>It is second of two municipalities in the province after the provincial capital Đông Hà</item>
+    </string-array>
+
+    <string-array name="description_detail_tinh_thua_thien_hue">
+        <item>Thua Thien Hue is a province in the North Central Coast region of Vietnam, approximately in the centre of the country</item>
+        <item> It borders Quảng Trị province to the north, Quảng Nam province and Đà Nẵng to the south, Laos to the west and the East Sea to the east</item>
+        <item> The province has 128 km of coastline, 22,000 ha of lagoons and over 200,000 ha of forest</item>
+        <item> There is an extensive complex of imperial tombs and temples in Huế </item>
+    </string-array>
+
+
+
     <string name="World_Trade_Park_provider">Mr.Anoop Bartaria</string>
 
 
@@ -256,5 +337,42 @@
         <item> The palace, built-in red sandstone, is a five storied building, of which four floors remain underwater when the lake is full and the top floor is exposed.</item>
     </string-array>
     <string name="Jal_Mahel_provider"> Maharaja Jai Singh II </string>
+
+    <string name = "tinh_hoa_binh">Hoa Binh</string>
+    <string name = "description_tinh_hoa_binh">Hoa Binh is an a region of the region of Northwest , VietNam </string>
+
+    <string name= "tinh_son_la">Son La</string>
+    <string name= "description_tinh_son_la">Son La is the region of the Mountain is at the Northwest, Vietnam </string>
+
+    <string name= "tinh_dien_bien">Dien Bien</string>
+    <string name= "description_tinh_dien_bien">Dien Bien is a province in the Northwest region of Vietnam</string>
+
+    <string name= "tinh_lai_chau">Lai Chau</string>
+    <string name = "description_tinh_lai_chau">Lai Chau is a city in the Northwest region of Vietnam</string>
+
+    <string name = "tinh_lao_cai">Lao Cai</string>
+    <string name = "description_tinh_lao_cai">Lao Cai  is a city in the Northwest region of Vietnam</string>
+    
+    <string name="tinh_yen_bai">Yen Bai</string>
+    <string name ="description_tinh_yen_bai">Yen Bai is a city in Vietnam. It is the capital of Yên Bái Province, in the north-east region of Vietnam</string>
+
+    <string name="tinh_thanh_hoa">Thanh Hoa</string>
+    <string name="description_tinh_thanh_hoa">Thanh Hoa is the capital of Thanh Hoa Province.</string>
+
+    <string name="tinh_nghe_an">Nghe An</string>
+    <string name="description_tinh_nghe_an">Nghe An is a province in the North Central Coast region of Vietnam</string>
+
+    <string name="tinh_ha_tinh">Ha Tinh</string>
+    <string name="description_tinh_ha_tinh">Ha Tinh is the capital of Ha Tinh Province</string>
+
+    <string name="tinh_quang_binh">Quang Binh</string>
+    <string name="description_tinh_quang_binh">Quang Binh formerly Tiên Bình under the reign of Lê Trung Hưng of the Lê dynasty </string>
+
+    <string name="tinh_quang_tri">Quang Tri</string>
+    <string name="description_tinh_quang_tri">Quang Tri is a district-level town in Quang Tri Province in the North Central Coast region of Vietnam </string>
+
+    <string name="tinh_thua_thien_hue">Thua THien Hue</string>
+    <string name="description_tinh_thua_thien_hue">Thua Thien Hue is a province in the North Central Coast region of Vietnam </string>
+
 
 </resources>

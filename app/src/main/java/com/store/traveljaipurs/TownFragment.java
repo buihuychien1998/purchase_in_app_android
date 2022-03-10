@@ -39,29 +39,29 @@ public class TownFragment extends Fragment {
         final ArrayList<Item> items = new ArrayList<Item>();
 
         //Add list data
-        items.add(new Item(getString(R.string.World_Trade_Park_title),
-                R.drawable.city_wtp,
-                getString(R.string.World_Trade_Park_location)));
+        items.add(new Item(getString(R.string.tinh_hoa_binh),
+                R.drawable.tinh_hoa_binh,
+                getString(R.string.description_tinh_hoa_binh)));
 
-        items.add(new Item(getString(R.string.Abhaneri_Stepwall_title),
-                R.drawable.city_abhanaristepwall,
-                getString(R.string.Abhaneri_Stepwall_location)));
+        items.add(new Item(getString(R.string.tinh_son_la),
+                R.drawable.tinh_son_la,
+                getString(R.string.description_tinh_son_la)));
 
-        items.add(new Item(getString(R.string.Galta_ji_title),
-                R.drawable.city_galtaji,
-                getString(R.string.Galta_ji_location)));
+        items.add(new Item(getString(R.string.tinh_dien_bien),
+                R.drawable.tinh_dien_bien,
+                getString(R.string.description_tinh_dien_bien)));
 
-        items.add(new Item(getString(R.string.birla_Mandir_title),
-                R.drawable.city_birla,
-                getString(R.string.birla_Mandir_location)));
+        items.add(new Item(getString(R.string.tinh_lai_chau),
+                R.drawable.tinh_lai_chau,
+                getString(R.string.description_tinh_lai_chau)));
 
-        items.add(new Item(getString(R.string.Akshardham_title),
-                R.drawable.city_akshardham,
-                getString(R.string.Akshardham_location)));
+        items.add(new Item(getString(R.string.tinh_lao_cai),
+                R.drawable.tinh_lao_cai,
+                getString(R.string.description_tinh_lao_cai)));
 
-        items.add(new Item(getString(R.string.Central_Park_title),
-                R.drawable.city_centralpark,
-                getString(R.string.Central_Park_location)));
+        items.add(new Item(getString(R.string.tinh_yen_bai),
+                R.drawable.tinh_yen_bai,
+                getString(R.string.description_tinh_yen_bai)));
 
         //Create an ItemAdapter
         final ItemAdapter adapter = new ItemAdapter(getActivity(), items);
