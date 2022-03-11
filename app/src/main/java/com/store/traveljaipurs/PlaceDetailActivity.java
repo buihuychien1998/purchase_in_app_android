@@ -198,42 +198,36 @@ public class PlaceDetailActivity extends AppCompatActivity {
                 R.drawable.tinh_tay_ninh,
                 getString(R.string.tinh_tay_ninh),
                 getResources().getStringArray(R.array.description_detail_tinh_tay_ninh),
-                getString(R.string.Rajasthan_Palace_provider)));
+                getString(R.string.description_tinh_tay_ninh)));
 
-        place.add(new Item(getString(R.string.Hawamahel_title),
-                R.drawable.fort_hawamahel,
-                getString(R.string.Hawamahel_location),
-                getResources().getStringArray(R.array.Hawamahel_highlights),
-                getString(R.string.Hawamahel_provider)));
+        place.add(new Item(getString(R.string.tinh_kon_tum),
+                R.drawable.tinh_kon_tum,
+                getString(R.string.tinh_kon_tum),
+                getResources().getStringArray(R.array.description_detail_tinh_kon_tum),
+                getString(R.string.description_tinh_kon_tum)));
 
-        place.add(new Item(getString(R.string.Albert_hall_title),
-                R.drawable.fort_alberthall,
-                getString(R.string.Albert_hall_location),
-                getResources().getStringArray(R.array.Albert_hall_highlights),
-                getString(R.string.Albert_hall_provider)));
+        place.add(new Item(getString(R.string.tinh_gia_lai),
+                R.drawable.tinh_gia_lai,
+                getString(R.string.tinh_gia_lai),
+                getResources().getStringArray(R.array.description_detail_tinh_gia_lai),
+                getString(R.string.description_tinh_gia_lai)));
 
-        place.add(new Item(getString(R.string.Amber_Fort_title),
-                R.drawable.fort_amber,
-                getString(R.string.Amber_Fort_location),
-                getResources().getStringArray(R.array.Amber_Fort_highlights),
-                getString(R.string.Amber_Fort_provider)));
+        place.add(new Item(getString(R.string.tinh_dak_lak),
+                R.drawable.tinh_dak_lak,
+                getString(R.string.tinh_dak_lak),
+                getResources().getStringArray(R.array.description_detail_tinh_dak_lak),
+                getString(R.string.description_tinh_dak_lak)));
 
-        place.add(new Item(getString(R.string.Nahargarh_Fort_title),
-                R.drawable.fort_nahargarh,
-                getString(R.string.Nahargarh_Fort_location),
-                getResources().getStringArray(R.array.Nahargarh_Fort_highlights),
-                getString(R.string.Nahargarh_Fort_provider)));
+        place.add(new Item(getString(R.string.tinh_dak_nong),
+                R.drawable.tinh_dak_nong,
+                getString(R.string.tinh_dak_nong),
+                getResources().getStringArray(R.array.description_detail_tinh_dak_nong),
+                getString(R.string.description_tinh_dak_nong)));
 
-        place.add(new Item(getString(R.string.Jantar_Mantar_title),
-                R.drawable.fort_jantarmantar,
-                getString(R.string.Jantar_Mantar_location),
-                getResources().getStringArray(R.array.Jantar_Mantar_highlights),
-                getString(R.string.Jantar_Mantar_provider)));
-
-        place.add(new Item(getString(R.string.Jal_Mahel_title),
-                R.drawable.fort_jalmahel,
-                getString(R.string.Jal_Mahel_location),
-                getResources().getStringArray(R.array.Jal_Mahel_highlights),
-                getString(R.string.Jal_Mahel_provider)));
+        place.add(new Item(getString(R.string.tinh_lam_dong),
+                R.drawable.tinh_lam_dong,
+                getString(R.string.tinh_lam_dong),
+                getResources().getStringArray(R.array.description_detail_tinh_lam_dong),
+                getString(R.string.description_tinh_lam_dong)));
     }
 }

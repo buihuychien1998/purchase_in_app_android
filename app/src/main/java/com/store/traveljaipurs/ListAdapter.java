@@ -61,7 +61,7 @@ public class ListAdapter extends FragmentPagerAdapter {
         } else if (position == 2) {
             return thisContext.getString(R.string.category_name_south_vietnam);
         } else if (position == 3) {
-            return thisContext.getString(R.string.category_name_Historical);
+            return thisContext.getString(R.string.category_name_central_highland_of_vietnam);
         } else {
             return "";
         }

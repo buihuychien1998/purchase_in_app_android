@@ -33,29 +33,25 @@ public class FortFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.item_listview, container, false);
         final ArrayList<Item> inner_Details = new ArrayList<>();
 
-        inner_Details.add(new Item(getString(R.string.Hawamahel_title),
-                R.drawable.fort_hawamahel,
-                getString(R.string.Hawamahel_location)));
+        inner_Details.add(new Item(getString(R.string.tinh_kon_tum),
+                R.drawable.tinh_kon_tum,
+                getString(R.string.description_tinh_kon_tum)));
 
-        inner_Details.add(new Item(getString(R.string.Albert_hall_title),
-                R.drawable.fort_alberthall,
-                getString(R.string.Albert_hall_location)));
+        inner_Details.add(new Item(getString(R.string.tinh_gia_lai),
+                R.drawable.tinh_gia_lai,
+                getString(R.string.description_tinh_gia_lai)));
 
-        inner_Details.add(new Item(getString(R.string.Amber_Fort_title),
-                R.drawable.fort_amber,
-                getString(R.string.Amber_Fort_location)));
+        inner_Details.add(new Item(getString(R.string.tinh_dak_lak),
+                R.drawable.tinh_dak_lak,
+                getString(R.string.description_tinh_dak_lak)));
 
-        inner_Details.add(new Item(getString(R.string.Nahargarh_Fort_title),
-                R.drawable.fort_nahargarh,
-                getString(R.string.Nahargarh_Fort_location)));
+        inner_Details.add(new Item(getString(R.string.tinh_dak_nong),
+                R.drawable.tinh_dak_nong,
+                getString(R.string.description_tinh_dak_nong)));
 
-        inner_Details.add(new Item(getString(R.string.Jantar_Mantar_title),
-                R.drawable.fort_jantarmantar,
-                getString(R.string.Jantar_Mantar_location)));
-
-        inner_Details.add(new Item(getString(R.string.Jal_Mahel_title),
-                R.drawable.fort_jalmahel,
-                getString(R.string.Jal_Mahel_location)));
+        inner_Details.add(new Item(getString(R.string.tinh_lam_dong),
+                R.drawable.tinh_lam_dong,
+                getString(R.string.description_tinh_lam_dong)));
 
         final ItemAdapter adapter = new ItemAdapter(getActivity(), inner_Details);
 
