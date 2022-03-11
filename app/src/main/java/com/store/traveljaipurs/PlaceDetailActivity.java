@@ -64,12 +64,12 @@ public class PlaceDetailActivity extends AppCompatActivity {
 
         String[] highlights = mItems.get(index).getHighlights();
 
-        String highlights_text = "";
+        StringBuilder highlights_text = new StringBuilder();
 
         for (String highlight : highlights) {
-            highlights_text += "* " + highlight + "\n\n";
+            highlights_text.append("* ").append(highlight).append("\n\n");
         }
-        PlaceHighlight.setText(highlights_text);
+        PlaceHighlight.setText(highlights_text.toString());
 
     }
 

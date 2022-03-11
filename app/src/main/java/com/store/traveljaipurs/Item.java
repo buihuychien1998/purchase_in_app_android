@@ -1,9 +1,10 @@
 package com.store.traveljaipurs;
 
 public class Item {
-    private String itemTitle;
-    private int itemImageResourceId;
-    private String placeLocation;
+    private String cost;
+    private final String itemTitle;
+    private final int itemImageResourceId;
+    private final String placeLocation;
     private String[] place_Highlights;
     private String itemProvider;
 
@@ -46,4 +47,11 @@ public class Item {
         return placeLocation;
     }
 
+    public String getCost() {
+        return cost;
+    }
+
+    public void setCost(String cost) {
+        this.cost = cost;
+    }
 }
