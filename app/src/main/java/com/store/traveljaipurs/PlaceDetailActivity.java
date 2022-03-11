@@ -164,40 +164,40 @@ public class PlaceDetailActivity extends AppCompatActivity {
                 getResources().getStringArray(R.array.description_detail_tinh_thua_thien_hue),
                 getString(R.string.description_tinh_thua_thien_hue)));
 
-        place.add(new Item(getString(R.string.Fairmont_title),
-                R.drawable.lodge_fairmont,
-                getString(R.string.Fairmont_location),
-                getResources().getStringArray(R.array.Fairmont_highlights),
-                getString(R.string.Fairmont_provider)));
+        place.add(new Item(getString(R.string.thanh_pho_ho_chi_minh),
+                R.drawable.thanh_pho_ho_chi_minh,
+                getString(R.string.thanh_pho_ho_chi_minh),
+                getResources().getStringArray(R.array.description_detail_thanh_pho_ho_chi_minh),
+                getString(R.string.description_thanh_pho_ho_chi_minh)));
 
-        place.add(new Item(getString(R.string.Ibis_title),
-                R.drawable.lodge_ibis,
-                getString(R.string.Ibis_location),
-                getResources().getStringArray(R.array.Ibis_highlights),
-                getString(R.string.Ibis_provider)));
+        place.add(new Item(getString(R.string.tinh_ba_ria_vung_tau),
+                R.drawable.tinh_ba_ria_vung_tau,
+                getString(R.string.tinh_ba_ria_vung_tau),
+                getResources().getStringArray(R.array.description_detail_tinh_ba_ria_vung_tau),
+                getString(R.string.description_tinh_ba_ria_vung_tau)));
 
-        place.add(new Item(getString(R.string.Radission_title),
-                R.drawable.lodge_radisson,
-                getString(R.string.Radission_location),
-                getResources().getStringArray(R.array.Radission_highlights),
-                getString(R.string.Radission_provider)));
+        place.add(new Item(getString(R.string.tinh_binh_duong),
+                R.drawable.tinh_binh_duong,
+                getString(R.string.tinh_binh_duong),
+                getResources().getStringArray(R.array.description_detail_tinh_binh_duong),
+                getString(R.string.description_tinh_binh_duong)));
 
-        place.add(new Item(getString(R.string.Meridian_title),
-                R.drawable.lodge_meridian,
-                getString(R.string.Meridian__location),
-                getResources().getStringArray(R.array.Meridian__highlights),
-                getString(R.string.Meridian__provider)));
+        place.add(new Item(getString(R.string.tinh_binh_phuoc),
+                R.drawable.tinh_binh_phuoc,
+                getString(R.string.tinh_binh_phuoc),
+                getResources().getStringArray(R.array.description_detail_tinh_binh_phuoc),
+                getString(R.string.description_tinh_binh_phuoc)));
 
-        place.add(new Item(getString(R.string.Oberoi_Palace_title),
-                R.drawable.lodge_oberoi,
-                getString(R.string.Oberoi_Palace_location),
-                getResources().getStringArray(R.array.Oberoi_Palace_highlights),
-                getString(R.string.Oberoi_Palace_provider)));
+        place.add(new Item(getString(R.string.tinh_dong_nai),
+                R.drawable.tinh_dong_nai,
+                getString(R.string.tinh_dong_nai),
+                getResources().getStringArray(R.array.description_detail_tinh_dong_nai),
+                getString(R.string.description_tinh_dong_nai)));
 
-        place.add(new Item(getString(R.string.Rajasthan_Palace_title),
-                R.drawable.lodge_rajasthan,
-                getString(R.string.Rajasthan_Palace_location),
-                getResources().getStringArray(R.array.Rajasthan_Palace_highlights),
+        place.add(new Item(getString(R.string.tinh_tay_ninh),
+                R.drawable.tinh_tay_ninh,
+                getString(R.string.tinh_tay_ninh),
+                getResources().getStringArray(R.array.description_detail_tinh_tay_ninh),
                 getString(R.string.Rajasthan_Palace_provider)));
 
         place.add(new Item(getString(R.string.Hawamahel_title),

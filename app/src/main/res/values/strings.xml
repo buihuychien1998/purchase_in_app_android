@@ -9,6 +9,7 @@
     <string name="intent_extra_item_title">PLACE_TITLE</string>
     <string name="category_name_northern_vietnam">Northern Viet Nam</string>
     <string name="category_name_central_vietnam">Central Viet Nam</string>
+    <string name="category_name_south_vietnam">South Viet Nam</string>
 
 
     <string name="World_Trade_Park_title">World Trade Park</string>
@@ -96,7 +97,39 @@
         <item> There is an extensive complex of imperial tombs and temples in Huế </item>
     </string-array>
 
+    <string-array name="description_detail_thanh_pho_ho_chi_minh">
+        <item> Ho Chi Minh City is the largest city in Vietnam, situated in the south </item>
+        <item> In the southeastern region, the city surrounds the Saigon River and covers about 2,061 km2 </item>
+        <item> The primary economic center of Vietnam, it is also an emerging international destination, with popular landmarks related to remnants of its history showcased through its architecture. A major transportation hub, the city hosts the Tan Son Nhat International Airport, the busiest airport in Vietnam </item>
+        <item> Ho Chi Minh City is also undergoing construction of educational institutions and transportation, and also serves as a major media and entertainment outlet </item>
+    </string-array>
 
+    <string-array name="description_detail_tinh_ba_ria_vung_tau">
+        <item> Ba Ria Vung Tau is a province of Vietnam. It is located on the coast of the country Southeast region </item>
+        <item> It also includes the Côn Đảo islands, located some distance off Vietnam southeastern coast </item>
+    </string-array>
+
+    <string-array name="description_detail_tinh_binh_duong">
+        <item> Binh Duong  is a province of Vietnam. It is located in the Southeast region of the country and the Southern Key Economic Zone 2, bordering Bình Phước province to the north, Ho Chi Minh City (HCMC) to the south and southwest, Tây Ninh province to the west, and Đồng Nai province to the east </item>
+        <item> The province was created from Sông Bé province on 1 January 1997 </item>
+        <item> Binh Duong is considered to be the gateway to HCMC, the economic cultural centre of the country. Endowed with convenient geography conditions, Bình Dương has an extremely important road network. Major highways of the country cross Bình Dương such as National Road (NR) no. 13, NR no. 14, the HCMC Route and the Trans-Asian Highway </item>
+        <item> Binh Duong is only 10–15 kilometres (6.2–9.3 mi) from Tân Sơn Nhất International Airport and important ports. All of the advantages create favourable conditions to achieve social and economic development </item>
+    </string-array>
+
+    <string-array name="description_detail_tinh_binh_phuoc">
+        <item> Binh Phuoc is a province of Vietnam. It is located in the Southeast region of the country, to the north of Ho Chi Minh City</item>
+        <item> It shares a border with Cambodia </item>
+    </string-array>
+
+    <string-array name="description_detail_tinh_dong_nai">
+        <item> Dong Nai is a province in the Southeast region of Vietnam, located east and northeast of Ho Chi Minh City </item>
+        <item> The largest city in Dong Nai is Bien Hoa </item>
+    </string-array>
+
+    <string-array name="description_detail_tinh_tay_ninh">
+        <item> Tay Ninh is a province in the Southeast region of Vietnam on the border with Cambodia </item>
+        <item> Its capital is the town of Tay Ninh </item>
+    </string-array>
 
     <string name="World_Trade_Park_provider">Mr.Anoop Bartaria</string>
 
@@ -371,8 +404,25 @@
     <string name="tinh_quang_tri">Quang Tri</string>
     <string name="description_tinh_quang_tri">Quang Tri is a district-level town in Quang Tri Province in the North Central Coast region of Vietnam </string>
 
-    <string name="tinh_thua_thien_hue">Thua THien Hue</string>
+    <string name="tinh_thua_thien_hue">Thua Thien Hue</string>
     <string name="description_tinh_thua_thien_hue">Thua Thien Hue is a province in the North Central Coast region of Vietnam </string>
 
+    <string name="thanh_pho_ho_chi_minh">Ho Chi Minh City</string>
+    <string name="description_thanh_pho_ho_chi_minh">Ho Chi Minh City is the largest city in Vietnam, situated in the south </string>
+
+    <string name="tinh_ba_ria_vung_tau">Ba Ria Vung Tau</string>
+    <string name="description_tinh_ba_ria_vung_tau"> Ba Ria Vung Tau is a province of Vietnam. It is located on the coast of the country Southeast region </string>
+
+    <string name="tinh_binh_duong">Binh Duong</string>
+    <string name="description_tinh_binh_duong"> Binh Duong is a province of Vietnam. It is located in the Southeast region of the country </string>
+
+    <string name="tinh_binh_phuoc">Binh Phuoc</string>
+    <string name="description_tinh_binh_phuoc"> Binh Phuoc is a province of Vietnam. It is located in the north of Ho Chi Minh City </string>
+
+    <string name="tinh_dong_nai">Dong Nai</string>
+    <string name="description_tinh_dong_nai"> Dong Nai is located east and northeast of Ho Chi Minh City </string>
+
+    <string name="tinh_tay_ninh">Tay Ninh</string>
+    <string name="description_tinh_tay_ninh"> Tây Ninh is in the Southeast region of Vietnam on the border with Cambodia </string>
 
 </resources>
