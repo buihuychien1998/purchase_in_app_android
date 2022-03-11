@@ -6,6 +6,6 @@
     android:layout_height="match_parent"
     android:divider="@android:color/transparent"
     android:dividerHeight="8dp"
-    android:background="#eeccff"
+    android:background="@color/design_default_color_background"
     android:orientation="vertical"/>
 

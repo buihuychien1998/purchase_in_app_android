@@ -13,12 +13,12 @@
         android:id="@+id/tabs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        android:background="@color/design_default_color_background"/>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#eeccff"/>
+        android:background="@color/design_default_color_background"/>
 
 </LinearLayout>

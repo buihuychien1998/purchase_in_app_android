@@ -40,29 +40,29 @@ public class LodgeFragment extends Fragment {
         final ArrayList<Item> items = new ArrayList<Item>();
 
         //Add list data
-        items.add(new Item(getString(R.string.Fairmont_title),
-                R.drawable.lodge_fairmont,
-                getString(R.string.Fairmont_location)));
+        items.add(new Item(getString(R.string.thanh_pho_ho_chi_minh),
+                R.drawable.thanh_pho_ho_chi_minh,
+                getString(R.string.description_thanh_pho_ho_chi_minh)));
 
-        items.add(new Item(getString(R.string.Ibis_title),
-                R.drawable.lodge_ibis,
-                getString(R.string.Ibis_location)));
+        items.add(new Item(getString(R.string.tinh_ba_ria_vung_tau),
+                R.drawable.tinh_ba_ria_vung_tau,
+                getString(R.string.description_tinh_ba_ria_vung_tau)));
 
-        items.add(new Item(getString(R.string.Radission_title),
-                R.drawable.lodge_radisson,
-                getString(R.string.Radission_location)));
+        items.add(new Item(getString(R.string.tinh_binh_duong),
+                R.drawable.tinh_binh_duong,
+                getString(R.string.description_tinh_binh_duong)));
 
-        items.add(new Item(getString(R.string.Meridian_title),
-                R.drawable.lodge_meridian,
-                getString(R.string.Meridian__location)));
+        items.add(new Item(getString(R.string.tinh_binh_phuoc),
+                R.drawable.tinh_binh_phuoc,
+                getString(R.string.description_tinh_binh_phuoc)));
 
-        items.add(new Item(getString(R.string.Oberoi_Palace_title),
-                R.drawable.lodge_oberoi,
-                getString(R.string.Oberoi_Palace_location)));
+        items.add(new Item(getString(R.string.tinh_dong_nai),
+                R.drawable.tinh_dong_nai,
+                getString(R.string.description_tinh_dong_nai)));
 
-        items.add(new Item(getString(R.string.Rajasthan_Palace_title),
-                R.drawable.lodge_rajasthan,
-                getString(R.string.Rajasthan_Palace_location)));
+        items.add(new Item(getString(R.string.tinh_tay_ninh),
+                R.drawable.tinh_tay_ninh,
+                getString(R.string.description_tinh_tay_ninh)));
 
         //Create an ItemAdapter
         final ItemAdapter adapter = new ItemAdapter(getActivity(), items);

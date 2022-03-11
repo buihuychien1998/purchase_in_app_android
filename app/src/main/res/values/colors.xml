@@ -7,4 +7,5 @@
     <color name="actionBarPrimaryText">#bada55</color>
     <color name="itemTitleText">#000000</color>
     <color name="reviewStar">#ffaa00</color>
+    <color name="colorBlue">#0000FF</color>
 </resources>

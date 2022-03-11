@@ -52,29 +52,29 @@ public class CuisineFragment extends Fragment implements BillingProcessor.IBilli
         initView();
         final ArrayList<Item> items = new ArrayList<Item>();
 
-        items.add(new Item(getString(R.string.Rajasthani_Food_title),
-                R.drawable.food_rajasthani,
-                getString(R.string.Rajasthani_Food_location)));
+        items.add(new Item(getString(R.string.tinh_thanh_hoa),
+                R.drawable.tinh_thanh_hoa,
+                getString(R.string.description_tinh_thanh_hoa)));
 
-        items.add(new Item(getString(R.string.BBQ_Nation_title),
-                R.drawable.food_bbq,
-                getString(R.string.BBQ_Nation_location)));
+        items.add(new Item(getString(R.string.tinh_nghe_an),
+                R.drawable.tinh_nghe_an,
+                getString(R.string.description_tinh_nghe_an)));
 
-        items.add(new Item(getString(R.string.Virasat_title),
-                R.drawable.food_virasat,
-                getString(R.string.Virasat_location)));
+        items.add(new Item(getString(R.string.tinh_ha_tinh),
+                R.drawable.tinh_ha_tinh,
+                getString(R.string.description_tinh_ha_tinh)));
 
-        items.add(new Item(getString(R.string.Jaipur_Adda_title),
-                R.drawable.food_jaipur_adda,
-                getString(R.string.Jaipur_Adda_location)));
+        items.add(new Item(getString(R.string.tinh_quang_binh),
+                R.drawable.tinh_quang_binh,
+                getString(R.string.description_tinh_quang_binh)));
 
-        items.add(new Item(getString(R.string.ZoloCrust_title),
-                R.drawable.food_zolocrust,
-                getString(R.string.ZoloCrust_location)));
+        items.add(new Item(getString(R.string.tinh_quang_tri),
+                R.drawable.tinh_quang_tri,
+                getString(R.string.description_tinh_quang_tri)));
 
-        items.add(new Item(getString(R.string.Rajput_Room_title),
-                R.drawable.food_the_rajput_room,
-                getString(R.string.Rajput_Room_location)));
+        items.add(new Item(getString(R.string.tinh_thua_thien_hue),
+                R.drawable.tinh_thua_thien_hue,
+                getString(R.string.description_tinh_thua_thien_hue)));
 
         final ItemAdapter adapter = new ItemAdapter(getActivity(), items);
 

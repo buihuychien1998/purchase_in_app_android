@@ -55,11 +55,11 @@ public class ListAdapter extends FragmentPagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
         if (position == 0) {
-            return thisContext.getString(R.string.category_name_City_Overview);
+            return thisContext.getString(R.string.category_name_northern_vietnam);
         } else if (position == 1) {
-            return thisContext.getString(R.string.category_name_Restaurant);
+            return thisContext.getString(R.string.category_name_central_vietnam);
         } else if (position == 2) {
-            return thisContext.getString(R.string.category_name_Rajwada_Hotel);
+            return thisContext.getString(R.string.category_name_south_vietnam);
         } else if (position == 3) {
             return thisContext.getString(R.string.category_name_Historical);
         } else {
