@@ -10,6 +10,7 @@
     <string name="category_name_northern_vietnam">Northern Viet Nam</string>
     <string name="category_name_central_vietnam">Central Viet Nam</string>
     <string name="category_name_south_vietnam">South Viet Nam</string>
+    <string name="category_name_central_highland_of_vietnam">Central Highlands of Vietnam</string>
 
 
     <string name="World_Trade_Park_title">World Trade Park</string>
@@ -129,6 +130,32 @@
     <string-array name="description_detail_tinh_tay_ninh">
         <item> Tay Ninh is a province in the Southeast region of Vietnam on the border with Cambodia </item>
         <item> Its capital is the town of Tay Ninh </item>
+    </string-array>
+
+    <string-array name="description_detail_tinh_kon_tum">
+        <item> Kon Tum is the capital city of Kon Tum Province in Vietnam </item>
+        <item> It is located inland in the Central Highlands region of Vietnam, near the borders of Laos and Cambodia </item>
+    </string-array>
+
+    <string-array name="description_detail_tinh_gia_lai">
+        <item> Gia Lai is a province in the Central Highlands of Vietnam </item>
+        <item> It is the second-largest province of Vietnam. The name comes from the Jarai people, one of the local indigenous groups </item>
+    </string-array>
+
+    <string-array name="description_detail_tinh_dak_lak">
+        <item> Đắk Lắk is a province of Vietnam. It is located in Vietnam Central Highlands </item>
+        <item> It is home to quite a few indigenous ethnic minorities, such as the Rade, the Jarai and the Mnong, among others </item>
+    </string-array>
+
+    <string-array name="description_detail_tinh_dak_nong">
+        <item> Dak Nong is a province of Vietnam. It is located in the country Central Highlands </item>
+        <item> The provincial capital is Gia Nghia </item>
+    </string-array>
+
+    <string-array name="description_detail_tinh_lam_dong">
+        <item> Lam Dong is a province located in the Central Highlands region of Vietnam. Its capital is Đà Lạt </item>
+        <item> Lam Dong borders Khanh Hoa and Ninh Thuan to the east, Dong Nai province to the southwest, Binh Thuan to the southeast, Đắk Lắk to the north, and Đắk Nông to the northwest </item>
+        <item> It is the only Central Highlands province which does not share its western border with neither Laos nor Cambodia </item>
     </string-array>
 
     <string name="World_Trade_Park_provider">Mr.Anoop Bartaria</string>
@@ -423,6 +450,21 @@
     <string name="description_tinh_dong_nai"> Dong Nai is located east and northeast of Ho Chi Minh City </string>
 
     <string name="tinh_tay_ninh">Tay Ninh</string>
-    <string name="description_tinh_tay_ninh"> Tây Ninh is in the Southeast region of Vietnam on the border with Cambodia </string>
+    <string name="description_tinh_tay_ninh"> Tay Ninh is in the Southeast region of Vietnam on the border with Cambodia </string>
+
+    <string name="tinh_kon_tum">Kon Tum</string>
+    <string name="description_tinh_kon_tum"> Kon Tum is the capital city of Kon Tum Province in Vietnam </string>
+
+    <string name="tinh_gia_lai">Gia Lai</string>
+    <string name="description_tinh_gia_lai"> Gia Lai is a province in the Central Highlands of Vietnam </string>
+
+    <string name="tinh_dak_lak">Dak Lak</string>
+    <string name="description_tinh_dak_lak"> Dak Lak is a province of Vietnam. It is located in Vietnam Central Highlands </string>
+
+    <string name="tinh_dak_nong">Dak Nong</string>
+    <string name="description_tinh_dak_nong"> Dak Nong is a province of Vietnam. It is located in the country Central Highlands </string>
+
+    <string name="tinh_lam_dong">Lam Dong</string>
+    <string name="description_tinh_lam_dong"> Lam Dong is a province located in the Central Highlands region of Vietnam </string>
 
 </resources>
