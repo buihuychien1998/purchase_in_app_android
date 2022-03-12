@@ -1,4 +1,4 @@
-package com.store.traveljaipurs;
+package com.store.journey;
 
 import android.os.Bundle;
 import android.view.Menu;
@@ -7,7 +7,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.store.traveljaipurs.R;
+import com.store.journey.R;
 
 import java.util.ArrayList;
 import java.util.Objects;

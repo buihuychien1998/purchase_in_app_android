@@ -3,6 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Test/Travel_Jaipur/app/src/main/res/drawable/bg_gradient.xml" value="0.1" />
+        <entry key="..\:/Test/Travel_Jaipur/app/src/main/res/drawable/ic_kindpng_2572965.xml" value="0.20364583333333333" />
+        <entry key="..\:/Test/Travel_Jaipur/app/src/main/res/drawable/splash_background.xml" value="0.1" />
+        <entry key="..\:/Test/Travel_Jaipur/app/src/main/res/layout/activity_item_detail.xml" value="0.1875" />
+        <entry key="..\:/Test/Travel_Jaipur/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Test/Travel_Jaipur/app/src/main/res/layout/item_listview.xml" value="0.1921875" />
+        <entry key="..\:/Test/Travel_Jaipur/app/src/main/res/layout/list_item.xml" value="0.1921875" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Travel_Jaipur/app/src/main/res/layout/activity_main.xml" value="0.1" />
       </map>
     </option>

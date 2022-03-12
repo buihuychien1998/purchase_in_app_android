@@ -1,6 +1,7 @@
-package com.store.traveljaipurs;
+package com.store.journey;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -17,25 +18,31 @@ import com.android.billingclient.api.BillingClient;
 import com.android.billingclient.api.BillingClientStateListener;
 import com.android.billingclient.api.BillingFlowParams;
 import com.android.billingclient.api.BillingResult;
+import com.android.billingclient.api.ConsumeParams;
+import com.android.billingclient.api.ConsumeResponseListener;
 import com.android.billingclient.api.Purchase;
 import com.android.billingclient.api.SkuDetails;
 import com.android.billingclient.api.SkuDetailsParams;
 import com.anjlab.android.iab.v3.BillingProcessor;
 import com.anjlab.android.iab.v3.PurchaseInfo;
 import com.google.gson.Gson;
+import com.store.journey.R;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class CuisineFragment extends Fragment implements BillingProcessor.IBillingHandler {
-//    BillingProcessor billingProcessor;
+    //    BillingProcessor billingProcessor;
     private BillingClient billingClient;
-//    private static final String LICENSE_KEY = BuildConfig.licenceKey; // PUT YOUR MERCHANT KEY HERE;
+    //    private static final String LICENSE_KEY = BuildConfig.licenceKey; // PUT YOUR MERCHANT KEY HERE;
     // put your Google merchant id here (as stated in public profile of your Payments Merchant Center)
     // if filled library will provide protection against Freedom alike Play Market simulators
-    final List<Item> items = new ArrayList<Item>();
+    final List<Item> items = new ArrayList<>();
     final List<SkuDetails> skuDetailsList = new ArrayList<>();
     int clickedIndex = -1;
+    ItemAdapter adapter;
 
     public CuisineFragment() {
     }
@@ -54,7 +61,7 @@ public class CuisineFragment extends Fragment implements BillingProcessor.IBilli
 
         initData();
 
-        final ItemAdapter adapter = new ItemAdapter(getActivity(), items);
+        adapter = new ItemAdapter(getActivity(), items);
 
         ListView listView = rootView.findViewById(R.id.list);
 
@@ -63,18 +70,27 @@ public class CuisineFragment extends Fragment implements BillingProcessor.IBilli
         listView.setOnItemClickListener((adapterView, view, i, l) -> {
 //                billingProcessor.purchase(requireActivity(),"purchase_in_app");
             clickedIndex = i;
-            if(skuDetailsList.isEmpty()) {
+            if (skuDetailsList.isEmpty()) {
                 Toast.makeText(requireActivity(), "This feature is coming soon", Toast.LENGTH_SHORT).show();
                 return;
             }
             try {
+                int skuIndex = 0;
+                Item currentItem = items.get(clickedIndex);
+                String currentTitle = currentItem.getTitle().toLowerCase().trim().replaceAll(" ", "_");
+                for (int index = 0; i < skuDetailsList.size(); index++) {
+                    if (skuDetailsList.get(index).getSku().equals(currentTitle)){
+                        skuIndex = index;
+                        break;
+                    }
+                }
                 BillingFlowParams billingFlowParams = BillingFlowParams.newBuilder()
-                        .setSkuDetails(skuDetailsList.get(clickedIndex))
+                        .setSkuDetails(skuDetailsList.get(skuIndex))
                         .build();
 
                 BillingResult result = billingClient.launchBillingFlow(requireActivity(), billingFlowParams);
-            }catch (Exception e){
-                Log.d(CuisineFragment.class.getSimpleName(), e.getMessage());
+            } catch (Exception e) {
+                Log.d(CuisineFragment.class.getSimpleName(), e.getMessage() == null ? "" : e.getMessage());
             }
         });
 
@@ -117,7 +133,27 @@ public class CuisineFragment extends Fragment implements BillingProcessor.IBilli
 
         startActivity(itemDetailIntent);
     }
+    void handlePurchase(Purchase purchase) {
+        // Purchase retrieved from BillingClient#queryPurchasesAsync or your PurchasesUpdatedListener.
+//        Purchase purchase = ...;
 
+        // Verify the purchase.
+        // Ensure entitlement was not already granted for this purchaseToken.
+        // Grant entitlement to the user.
+
+        ConsumeParams consumeParams =
+                ConsumeParams.newBuilder()
+                        .setPurchaseToken(purchase.getPurchaseToken())
+                        .build();
+
+        ConsumeResponseListener listener = (billingResult, purchaseToken) -> {
+            if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.OK) {
+                // Handle the success of the consume operation.
+            }
+        };
+
+        billingClient.consumeAsync(consumeParams, listener);
+    }
     private void initView() {
 
 //        billingProcessor = BillingProcessor.newBillingProcessor(requireActivity(), LICENSE_KEY, this);
@@ -125,11 +161,12 @@ public class CuisineFragment extends Fragment implements BillingProcessor.IBilli
         billingClient = BillingClient.newBuilder(requireContext())
                 .enablePendingPurchases()
                 .setListener((billingResult, list) -> {
-                    if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.OK &&list != null) {
-                        for (Purchase purchase: list) {
-                            if(purchase.getPurchaseState() == Purchase.PurchaseState.PURCHASED){
+                    if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.OK && list != null) {
+                        for (Purchase purchase : list) {
+                            if (purchase.getPurchaseState() == Purchase.PurchaseState.PURCHASED) {
                                 Log.d(CuisineFragment.class.getSimpleName(), "PURCHARED");
-                                if(clickedIndex == -1) return;
+                                handlePurchase(purchase);
+                                if (clickedIndex == -1) return;
                                 openPlaceDetailActivity(clickedIndex);
                             }
                         }
@@ -169,9 +206,12 @@ public class CuisineFragment extends Fragment implements BillingProcessor.IBilli
         }
         // TODO: tạo list các product id (chính là product id bạn đã nhập ở bước trước) để lấy thông tin
         List<String> productIds = new ArrayList<>();
-        for (Item element: items) {
-            productIds.add(element.getTitle());
-        }
+        productIds.add("thanh_hoa");
+        productIds.add("nghe_an");
+        productIds.add("ha_tinh");
+        productIds.add("quang_binh");
+        productIds.add("quang_tri");
+        productIds.add("thua_thien_hue");
 
         SkuDetailsParams skuDetailsParams = SkuDetailsParams.newBuilder()
                 .setSkusList(productIds)
@@ -184,14 +224,15 @@ public class CuisineFragment extends Fragment implements BillingProcessor.IBilli
 
         billingClient.querySkuDetailsAsync(skuDetailsParams, (billingResult, list) -> {
             if (list != null && !list.isEmpty()) {
+                Log.d(CuisineFragment.class.getSimpleName(), list.size() + "");
                 //Đã lấy được thông tin các sản phẩm đang bán theo các product id ở trên
                 skuDetailsList.clear();
                 skuDetailsList.addAll(list);
                 for (SkuDetails skuDetails : list) {
-                    items.get(getItemIndexByTitle(skuDetails.getTitle())).setCost(skuDetails.getPrice());
-                    Log.d(CuisineFragment.class.getSimpleName(), new Gson().toJson(skuDetails));
-
+                    // matches the last text surrounded by parentheses at the end of the SKU title
+                    items.get(getItemIndexByTitle(skuDetails.getSku())).setCost(skuDetails.getPrice());
                 }
+                adapter.notifyDataSetChanged();
             } else {
                 Log.d(CuisineFragment.class.getSimpleName(), "No existing in app purchases found.");
             }
@@ -202,13 +243,13 @@ public class CuisineFragment extends Fragment implements BillingProcessor.IBilli
         try {
             for (int i = 0; i < items.size(); i++) {
                 Item currentItem = items.get(i);
-                String currentTitle = currentItem.getTitle();
+                String currentTitle = currentItem.getTitle().toLowerCase().trim().replaceAll(" ", "_");
+                Log.d(CuisineFragment.class.getSimpleName(), title + "/" + currentTitle + "/" + i);
                 if (title.equals(currentTitle)) {
                     return i;
                 }
             }
-        }
-        catch (Error error) {
+        } catch (Error error) {
             error.printStackTrace();
         }
         return -1;

@@ -5,10 +5,10 @@ android {
     buildToolsVersion "29.0.3"
 
     defaultConfig {
-        applicationId "com.examples.traveljaipurs"
+        applicationId "com.store.journey"
         minSdkVersion 21
         targetSdkVersion 32
-        versionCode 1
+        versionCode 3
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -42,5 +42,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation 'com.google.code.gson:gson:2.8.6'
     implementation 'com.anjlab.android.iab.v3:library:2.0.3'
+    implementation("androidx.viewpager2:viewpager2:1.0.0")
 
 }

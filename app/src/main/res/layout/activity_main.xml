@@ -7,15 +7,16 @@
     android:orientation="vertical"
     android:theme="@style/AppTheme"
     android:background="@color/colorPrimary"
-    tools:context="com.store.traveljaipurs.MainActivity" >
+    tools:context="com.store.journey.MainActivity" >
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:tabSelectedTextColor="@color/colorBlue"
         android:background="@color/design_default_color_background"/>
 
-    <androidx.viewpager.widget.ViewPager
+    <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

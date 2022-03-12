@@ -1,4 +1,4 @@
-package com.store.traveljaipurs;
+package com.store.journey;
 
 import org.junit.Test;
 

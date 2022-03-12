@@ -1,4 +1,4 @@
-package com.store.traveljaipurs;
+package com.store.journey;
 
 import android.content.Context;
 
@@ -9,13 +9,17 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.store.traveljaipurs.R;
+import com.store.journey.R;
 
 
 @SuppressWarnings("ALL")
 public class ListAdapter extends FragmentPagerAdapter {
     private Context thisContext;
     private int currentPos = -1;
+    TownFragment townFragment = new TownFragment();
+    CuisineFragment cuisineFragment = new CuisineFragment();
+    LodgeFragment lodgeFragment = new LodgeFragment();
+    FortFragment fortFragment = new FortFragment();
 
     public ListAdapter(Context context, FragmentManager fm) {
         super(fm);
@@ -25,23 +29,19 @@ public class ListAdapter extends FragmentPagerAdapter {
         thisContext = context;
     }
 
-
     @NonNull
     @Override
     public Fragment getItem(int position) {
-
+        currentPos = position;
         if (position == 0) {
-            currentPos = 0;
-            return new TownFragment();
+            return townFragment;
         } else if (position == 1) {
-            currentPos = 1;
-            return new CuisineFragment();
+            return cuisineFragment;
         } else if (position == 2) {
-            currentPos = 2;
-            return new LodgeFragment();
+            return lodgeFragment;
         } else
-            currentPos = 3;
-        return new FortFragment();
+            return fortFragment;
+
     }
 
 

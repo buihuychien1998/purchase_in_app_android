@@ -1,6 +1,6 @@
 <resources>
     <!-- UI strings -->
-    <string name="app_name" translatable="false">VietNam Tourist</string>
+    <string name="app_name" translatable="false">Viet Nam Tourist</string>
     <string name="category_name_City_Overview" translatable="false">City OverView</string>
     <string name="category_name_Restaurant" translatable="false">Cuisines</string>
     <string name="category_name_Rajwada_Hotel" translatable="false">Lodges</string>
