@@ -22,14 +22,17 @@ public class MainActivity extends AppCompatActivity {
 
         ListAdapter adapter = new ListAdapter(this, getSupportFragmentManager());
         ViewPager2Adapter pager2Adapter = new ViewPager2Adapter(getSupportFragmentManager(), this.getLifecycle());
+
         TownFragment townFragment = new TownFragment();
         CuisineFragment cuisineFragment = new CuisineFragment();
         LodgeFragment lodgeFragment = new LodgeFragment();
         FortFragment fortFragment = new FortFragment();
+
         pager2Adapter.addFragment(townFragment);
         pager2Adapter.addFragment(cuisineFragment);
         pager2Adapter.addFragment(lodgeFragment);
         pager2Adapter.addFragment(fortFragment);
+
         viewPager.setAdapter(pager2Adapter);
 
         TabLayout tabLayout = findViewById(R.id.tabs);
