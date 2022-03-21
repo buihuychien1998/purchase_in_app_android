@@ -7,12 +7,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.bumptech.glide.Glide;
 import com.store.journey.R;
 
 import java.util.ArrayList;
@@ -34,23 +36,26 @@ public class FortFragment extends Fragment {
         final ArrayList<Item> inner_Details = new ArrayList<>();
 
         inner_Details.add(new Item(getString(R.string.tinh_kon_tum),
-                R.drawable.tinh_kon_tum,
+                "https://vi.wikipedia.org/wiki/Gia_Lai#/media/T%E1%BA%ADp_tin:Chi%E1%BB%81u_cao_nguy%C3%AAn_-_Late_afternoon_in_the_Central_High_Plateaux_-_panoramio.jpg",
                 getString(R.string.description_tinh_kon_tum)));
 
         inner_Details.add(new Item(getString(R.string.tinh_gia_lai),
-                R.drawable.tinh_gia_lai,
+                "https://vi.wikipedia.org/wiki/Gia_Lai#/media/T%E1%BA%ADp_tin:Chi%E1%BB%81u_cao_nguy%C3%AAn_-_Late_afternoon_in_the_Central_High_Plateaux_-_panoramio.jpg"
+                ,
                 getString(R.string.description_tinh_gia_lai)));
 
         inner_Details.add(new Item(getString(R.string.tinh_dak_lak),
-                R.drawable.tinh_dak_lak,
+                "https://vi.wikipedia.org/wiki/Gia_Lai#/media/T%E1%BA%ADp_tin:Chi%E1%BB%81u_cao_nguy%C3%AAn_-_Late_afternoon_in_the_Central_High_Plateaux_-_panoramio.jpg"
+                ,
                 getString(R.string.description_tinh_dak_lak)));
 
         inner_Details.add(new Item(getString(R.string.tinh_dak_nong),
-                R.drawable.tinh_dak_nong,
+                "https://vi.wikipedia.org/wiki/Gia_Lai#/media/T%E1%BA%ADp_tin:Chi%E1%BB%81u_cao_nguy%C3%AAn_-_Late_afternoon_in_the_Central_High_Plateaux_-_panoramio.jpg",
+
                 getString(R.string.description_tinh_dak_nong)));
 
         inner_Details.add(new Item(getString(R.string.tinh_lam_dong),
-                R.drawable.tinh_lam_dong,
+                "https://vi.wikipedia.org/wiki/Gia_Lai#/media/T%E1%BA%ADp_tin:Chi%E1%BB%81u_cao_nguy%C3%AAn_-_Late_afternoon_in_the_Central_High_Plateaux_-_panoramio.jpg",
                 getString(R.string.description_tinh_lam_dong)));
 
         final ItemAdapter adapter = new ItemAdapter(getActivity(), inner_Details);

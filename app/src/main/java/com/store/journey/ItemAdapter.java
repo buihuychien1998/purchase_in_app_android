@@ -11,6 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.bumptech.glide.Glide;
 import com.store.journey.R;
 
 import java.util.ArrayList;
@@ -51,9 +52,12 @@ public class ItemAdapter extends ArrayAdapter<Item> {
         holder.location = listItemView.findViewById(R.id.location);
         holder.location.setText(currentItem.getLocation());
 
-        holder.image = listItemView.findViewById(R.id.image);
-        holder.image.setImageResource(currentItem.getImageResourceId());
 
+        if(currentItem.getImageResourceId() != 0){
+            holder.image.setImageResource(currentItem.getImageResourceId());
+        } else {
+            Glide.with(holder.image.getContext()).load(currentItem.getImageUrl()).into(holder.image);
+        }
 
         return listItemView;
     }
