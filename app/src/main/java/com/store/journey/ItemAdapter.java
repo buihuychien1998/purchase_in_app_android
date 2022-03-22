@@ -8,13 +8,12 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.bumptech.glide.Glide;
-import com.store.journey.R;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ItemAdapter extends ArrayAdapter<Item> {
@@ -52,7 +51,7 @@ public class ItemAdapter extends ArrayAdapter<Item> {
         holder.location = listItemView.findViewById(R.id.location);
         holder.location.setText(currentItem.getLocation());
 
-
+        holder.image = listItemView.findViewById(R.id.image);
         if(currentItem.getImageResourceId() != 0){
             holder.image.setImageResource(currentItem.getImageResourceId());
         } else {

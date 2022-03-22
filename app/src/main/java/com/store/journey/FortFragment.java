@@ -36,26 +36,26 @@ public class FortFragment extends Fragment {
         final ArrayList<Item> inner_Details = new ArrayList<>();
 
         inner_Details.add(new Item(getString(R.string.tinh_kon_tum),
-                "https://vi.wikipedia.org/wiki/Gia_Lai#/media/T%E1%BA%ADp_tin:Chi%E1%BB%81u_cao_nguy%C3%AAn_-_Late_afternoon_in_the_Central_High_Plateaux_-_panoramio.jpg",
+                "https://www.vietnamvisa-easy.com/blog/wp-content/uploads/2016/11/kon-tum.jpg",
                 getString(R.string.description_tinh_kon_tum)));
 
         inner_Details.add(new Item(getString(R.string.tinh_gia_lai),
-                "https://vi.wikipedia.org/wiki/Gia_Lai#/media/T%E1%BA%ADp_tin:Chi%E1%BB%81u_cao_nguy%C3%AAn_-_Late_afternoon_in_the_Central_High_Plateaux_-_panoramio.jpg"
+                "https://upload.wikimedia.org/wikipedia/commons/9/9c/Chi%E1%BB%81u_cao_nguy%C3%AAn_-_Late_afternoon_in_the_Central_High_Plateaux_-_panoramio.jpg"
                 ,
                 getString(R.string.description_tinh_gia_lai)));
 
         inner_Details.add(new Item(getString(R.string.tinh_dak_lak),
-                "https://vi.wikipedia.org/wiki/Gia_Lai#/media/T%E1%BA%ADp_tin:Chi%E1%BB%81u_cao_nguy%C3%AAn_-_Late_afternoon_in_the_Central_High_Plateaux_-_panoramio.jpg"
+                "https://baoquocte.vn/stores/news_dataimages/linhnguyen/062020/26/16/4033_94ed99c8a51658480107.jpg?rt=20200626194851"
                 ,
                 getString(R.string.description_tinh_dak_lak)));
 
         inner_Details.add(new Item(getString(R.string.tinh_dak_nong),
-                "https://vi.wikipedia.org/wiki/Gia_Lai#/media/T%E1%BA%ADp_tin:Chi%E1%BB%81u_cao_nguy%C3%AAn_-_Late_afternoon_in_the_Central_High_Plateaux_-_panoramio.jpg",
+                "https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2021/12/18/985970/TOAN-CANH-03.jpg",
 
                 getString(R.string.description_tinh_dak_nong)));
 
         inner_Details.add(new Item(getString(R.string.tinh_lam_dong),
-                "https://vi.wikipedia.org/wiki/Gia_Lai#/media/T%E1%BA%ADp_tin:Chi%E1%BB%81u_cao_nguy%C3%AAn_-_Late_afternoon_in_the_Central_High_Plateaux_-_panoramio.jpg",
+                "https://static1.cafeland.vn/cafelandnew/hinh-anh/2022/01/06/158/da-lat.jpg",
                 getString(R.string.description_tinh_lam_dong)));
 
         final ItemAdapter adapter = new ItemAdapter(getActivity(), inner_Details);
