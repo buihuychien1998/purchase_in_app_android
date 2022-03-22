@@ -3,16 +3,26 @@ package com.store.journey;
 public class Item {
     private String cost;
     private final String itemTitle;
-    private final int itemImageResourceId;
+    private int itemImageResourceId;
     private final String placeLocation;
     private String[] place_Highlights;
     private String itemProvider;
+    private String imageUrl;
 
     public Item(String title, int imageResourceId, String location) {
         itemTitle = title;
         itemImageResourceId = imageResourceId;
         placeLocation = location;
     }
+
+    public Item(String title, String imageUrl, String location) {
+        itemTitle = title;
+        this.imageUrl = imageUrl;
+        placeLocation = location;
+    }
+
+
+
 
     public Item(String title, int imageResourceId, String location, String[] highlights, String provider) {
         itemTitle = title;
@@ -40,6 +50,9 @@ public class Item {
 
     public int getImageResourceId() {
         return itemImageResourceId;
+    }
+    public String getImageUrl() {
+        return imageUrl;
     }
 
 
